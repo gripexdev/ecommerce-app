@@ -1,11 +1,14 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FaConfig, FaIconComponent, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { FaConfig, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { fontAwesomeIcons } from './shared/font-awesome-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
+
 
 @Component({
-  imports: [RouterModule, FaIconComponent],
+  imports: [RouterModule, NavbarComponent, FooterComponent],
   selector: 'ecom-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
